@@ -1,5 +1,5 @@
-#import asyncio
 #NOTE: delays are needed, airco does not accept quit succession of commands...
+#NOTE: don't use blocking time.sleep()!
 #NOTE: start_check_now does trigger function at restart !?!?
 
 FanMode = 'high'
