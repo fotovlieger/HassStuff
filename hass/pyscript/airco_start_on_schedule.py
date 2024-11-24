@@ -8,7 +8,7 @@ Temperature = 23
 
 @state_trigger("schedule.heating_schedule", state_hold=5, state_check_now=True)
 def airco_state_monitor():
-    if schedule.heating_schedule == 'On':
+    if schedule.heating_schedule == 'on':
         climate.midea_climate.set_hvac_mode('heat')
         task.sleep(6)
         climate.midea_climate.set_swing_mode(SwingMode)
