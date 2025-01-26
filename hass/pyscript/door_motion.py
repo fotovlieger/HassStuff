@@ -18,6 +18,7 @@ def door_motion():
             light.turn_on(entity_id=strip1, rgb_color=[255,190, 110], brightness=160)
             light.turn_on(entity_id=strip2, rgb_color=[255,190, 110], brightness=160)
     else:
-        light.turn_off(entity_id=strip)
+        light.turn_off(entity_id=strip1)
+        light.turn_off(entity_id=strip2)
 
 log.info("doormotion")
